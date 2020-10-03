@@ -3,10 +3,11 @@ import MovieCard from './MovieCard';
 export default function SearchMovies() {
 	const [ movie, setMovie ] = useState('');
 	const [ movieUi, setMovieUi ] = useState([]);
-
+	const x = process.env.REACT_APP_MY_KEY;
 	const searchMovies = async (e) => {
 		e.preventDefault();
-		const url = `https://api.themoviedb.org/3/search/movie?api_key=8be385800bfcb91b72b9b12c071dabf5&language=en-US&query=${movie}&page=1&include_adult=false`;
+
+		const url = `https://api.themoviedb.org/3/search/movie?api_key=${x}&language=en-US&query=${movie}&page=1&include_adult=false`;
 		try {
 			const res = await fetch(url);
 			const data = await res.json();

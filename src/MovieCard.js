@@ -14,7 +14,7 @@ export default function({ movie }) {
 					<small>RELEASE DATE: {movie.release_date}</small>
 				</p>
 				<p>
-					<small>RATING: {movie.vote_average}</small>
+					<small class="rating">RATING: {movie.vote_average}</small>
 				</p>
 				<p className="card--desc">{movie.overview}</p>
 			</div>

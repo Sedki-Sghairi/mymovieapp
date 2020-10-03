@@ -7,7 +7,7 @@ class App extends React.Component {
 		return (
 			<div className="container">
 				<div id="message" />
-				<h1 className="title">React Movie Search</h1>
+				<h1 className="title">My Movie App</h1>
 				<SearchMovies />
 			</div>
 		);
